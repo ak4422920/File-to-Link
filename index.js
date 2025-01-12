@@ -71,7 +71,7 @@ async function generateAndSendHash(ctx, fileId, fileName) {
                 const newFilePath = path.join(downloadsDir, `${hash}.mp4`);
                 fs.renameSync(filePath, newFilePath);
 
-                const photoUrl = 'https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg'; // Your photo URL
+                const photoUrl = 'https://envs.sh/veJ.jpg'; // Your photo URL
                 await sendPhotoWithLink(ctx, photoUrl, hash, fileName, stats.size);
             } catch (error) {
                 console.error('Hash generation error:', error);
@@ -93,7 +93,7 @@ async function generateAndSendHash(ctx, fileId, fileName) {
 // Function to post the file and photo with buttons to a specified channel
 async function postToChannel(hash, fileName, fileSize) {
     const filePath = path.join(downloadsDir, `${hash}.mp4`);
-    const photoUrl = 'https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg'; // Your photo URL
+    const photoUrl = 'https://envs.sh/veJ.jpg'; // Your photo URL
 
     if (fs.existsSync(filePath)) {
         try {
@@ -139,7 +139,7 @@ async function sendPhotoWithLink(ctx, photoUrl, hash, fileName, fileSize) {
 
 // Define /start command
 bot.start(async (ctx) => {
-    const photoUrl = 'https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg'; // Photo URL
+    const photoUrl = 'https://envs.sh/veJ.jpg'; // Photo URL
     const welcomeMessage = '🙄 Welcome! Send me a document or video, and I will generate its hash for you.';
 
     // Send the photo with the welcome message and join channel button
@@ -148,7 +148,7 @@ bot.start(async (ctx) => {
         reply_markup: {
             inline_keyboard: [
                 [
-                    { text: '✨ Join Channel ✨', url: 'https://t.me/Opleech_WD' }
+                    { text: '✨ Join Channel ✨', url: 'https://t.me/akmovieshubbackup' }
                 ]
             ]
         }
